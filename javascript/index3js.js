@@ -2,7 +2,7 @@ var firstname = prompt("Tape ton prénom, stp :");
 //Fonction qui vérifie et affiche le résultat
 function verifName(saisie){
   //Expression régulière de vérification
-  const regex =  /^[a-zA-ZäãåçéèêëíìîïñóòôöõúùûüÿÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜŸ-]+$/;
+  const regex =  /^[a-zA-ZÀ-ÿ-]+$/;
   //Condition de saisie
   if(!regex.test(saisie)||saisie==null){
     //PAS BON
